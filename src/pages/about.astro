@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="About"
+  description="Learn about the Convivir Fund — what it supports, who can apply, and the story behind it."
+>
+  <!-- ── Page header ───────────────────────────────────────────── -->
+  <section class="py-14 md:py-20 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <span style="font-family: var(--font-script);" class="text-3xl text-forest-600">About</span>
+      <h1 class="font-serif text-4xl md:text-5xl text-charcoal mt-2 leading-tight">
+        Small grants.<br />Big belief in people.
+      </h1>
+    </div>
+  </section>
+
+  <!-- ── About the Fund ───────────────────────────────────────── -->
+  <section class="py-14 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 md:gap-16">
+        <!-- Sidebar label -->
+        <div class="md:col-span-1">
+          <h2 class="font-serif text-2xl text-charcoal sticky top-28">About the Fund</h2>
+        </div>
+
+        <!-- Content -->
+        <div class="md:col-span-2 space-y-5 text-stone-700 leading-relaxed">
+          <p>
+            The Convivir Fund is a personal mini-grant initiative that provides direct
+            financial support to individual students facing hardship. <em>Convivir</em> —
+            Spanish for "to live together" — reflects a belief that a student's success
+            is a shared responsibility, and that small investments in people can make a
+            meaningful difference.
+          </p>
+          <p>
+            These grants are not scholarships. They are designed to remove the financial
+            barriers that prevent students from fully showing up — in the classroom, on
+            the field, and in their communities. When basic needs go unmet, academics
+            and participation suffer. The Convivir Fund exists to close that gap.
+          </p>
+          <p>
+            Grants are awarded at <strong>$500</strong> per recipient.
+          </p>
+
+          <div class="bg-forest-50 border border-forest-100 rounded-xl p-6 mt-6">
+            <h3 class="font-serif text-lg font-semibold text-charcoal mb-3">Who this fund is for</h3>
+            <ul class="space-y-2 text-sm text-stone-700">
+              <li class="flex gap-2">
+                <span class="text-forest-600 mt-0.5">✦</span>
+                Student athletes who want to participate but can't afford equipment, uniforms, or fees
+              </li>
+              <li class="flex gap-2">
+                <span class="text-forest-600 mt-0.5">✦</span>
+                Food insecure students who are struggling to meet basic needs
+              </li>
+              <li class="flex gap-2">
+                <span class="text-forest-600 mt-0.5">✦</span>
+                Student workers who need temporary relief to reduce hours and focus on school
+              </li>
+              <li class="flex gap-2">
+                <span class="text-forest-600 mt-0.5">✦</span>
+                Students whose financial circumstances are keeping them from fully participating in their education
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-2">
+            <h3 class="font-serif text-lg font-semibold text-charcoal mb-3">Current Pilot</h3>
+            <p>
+              The Convivir Fund is currently being piloted in partnership with{' '}
+              <a href="https://www.diygirls.org" target="_blank" rel="noopener noreferrer" class="text-forest-600 hover:text-forest-700 underline underline-offset-2 transition-colors">DIY Girls</a>,
+              a Los Angeles-based nonprofit that empowers girls and young women through
+              technology and making. This pilot allows the fund to learn, iterate, and
+              build toward a broader grantmaking model in the future.
+            </p>
+            <p class="mt-3">
+              We are not accepting open applications at this time. If you have questions
+              or want to stay connected, feel free to{' '}
+              <a href="/contact" class="text-forest-600 hover:text-forest-700 underline underline-offset-2 transition-colors">reach out</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Divider ───────────────────────────────────────────────── -->
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="h-px bg-stone-200"></div>
+  </div>
+
+  <!-- ── About the Founder ─────────────────────────────────────── -->
+  <section class="py-14 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 md:gap-16">
+        <!-- Sidebar label + photo -->
+        <div class="md:col-span-1">
+          <h2 class="font-serif text-2xl text-charcoal mb-6 md:sticky md:top-28">About the Founder</h2>
+          <!-- Replace this with your actual photo: public/images/founder.jpg -->
+          <div class="rounded-xl overflow-hidden bg-forest-100 aspect-square flex items-center justify-center">
+            <img
+              src="/images/founder.jpg"
+              alt="Photo of the founder"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="hidden w-full h-full items-center justify-center flex-col gap-2 text-forest-600 p-6 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <p class="text-xs text-forest-500 opacity-60">Add your photo to<br/>public/images/founder.jpg</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="md:col-span-2 space-y-5 text-stone-700 leading-relaxed">
+          <h3 class="font-serif text-2xl text-charcoal">Marisol Jimenez</h3>
+
+          <p>
+            I am a Pacoima native and first-generation college student. I earned my
+            Bachelor of Science in Design Engineering from Brown University, and I am
+            currently pursuing a Master's degree in Computer Science at Stevens Institute
+            of Technology, while working part-time as an educator.
+          </p>
+
+          <p>
+            The decision to pursue a graduate degree was not one I made lightly. Without
+            financial assistance, I was prepared to take out loans and dedicate every
+            paycheck to covering tuition. Then someone stepped in and made that burden
+            disappear. What followed changed my life in ways I hadn't anticipated.
+          </p>
+
+          <p>
+            With school covered and a paycheck coming in, I had room to breathe. I got
+            my sisters a set of quality tennis rackets and running shoes — and watched them fall in love
+            with their respective sport. I rescued a dog. I had the flexibility to simply live a
+            little more freely. I realized that money is a very tangible thing, and that
+            a specific, well-timed amount of it can quietly transform someone's life
+            outside the classroom just as much as inside it.
+          </p>
+
+          <p>
+            I created the Convivir Fund because I wanted to give that back — specifically
+            to students who may not have a community cheering them on. Sometimes all it
+            takes is one person deciding that your potential is worth investing in.
+          </p>
+
+          <p class="font-medium text-charcoal pt-2">
+            Questions or want to connect?{' '}
+            <a href="/contact" class="text-forest-600 hover:text-forest-700 underline underline-offset-2 transition-colors">
+              Reach out — I read every message.
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

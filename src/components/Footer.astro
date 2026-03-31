@@ -1,0 +1,26 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-forest-50 border-t border-forest-100 mt-auto">
+  <div class="max-w-4xl mx-auto px-6 py-10">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <!-- Brand -->
+      <div>
+        <p class="font-serif text-lg font-semibold text-charcoal">Convivir Fund</p>
+        <p class="text-sm text-stone-500 mt-1 italic">Living and growing together.</p>
+      </div>
+
+      <!-- Links -->
+      <nav class="flex flex-col sm:flex-row gap-4 sm:gap-6" aria-label="Footer navigation">
+        <a href="/" class="text-sm text-stone-600 hover:text-forest-600 transition-colors">Home</a>
+        <a href="/about" class="text-sm text-stone-600 hover:text-forest-600 transition-colors">About</a>
+        <a href="/contact" class="text-sm text-stone-600 hover:text-forest-600 transition-colors">Contact</a>
+      </nav>
+    </div>
+
+    <div class="border-t border-forest-100 mt-8 pt-6 text-center">
+      <p class="text-sm text-stone-400">© {year} Convivir Fund. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

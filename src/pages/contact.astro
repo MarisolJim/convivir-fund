@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout
+  title="Contact"
+  description="Get in touch with the Convivir Fund — whether you have a project idea, a question, or just want to connect."
+>
+  <!-- ── Page header ───────────────────────────────────────────── -->
+  <section class="py-14 md:py-20 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <span style="font-family: var(--font-script);" class="text-3xl text-forest-600">Contact</span>
+      <h1 class="font-serif text-4xl md:text-5xl text-charcoal mt-2 leading-tight">
+        Let's talk.
+      </h1>
+    </div>
+  </section>
+
+  <!-- ── Contact section ──────────────────────────────────────── -->
+  <section class="py-14 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-5 gap-10 md:gap-16">
+
+        <!-- Left: context -->
+        <div class="md:col-span-2 space-y-6">
+          <div>
+            <h2 class="font-serif text-2xl text-charcoal mb-3">I'd love to hear from you</h2>
+            <p class="text-stone-600 leading-relaxed text-sm">
+              Whether you have a project idea, a question about the fund, or just want
+              to connect — send me a message. I read every submission personally.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex gap-3 items-start">
+              <div class="w-8 h-8 bg-forest-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-charcoal">Grant Applications</p>
+                <p class="text-xs text-stone-500 mt-0.5">Tell me about your project and community</p>
+              </div>
+            </div>
+
+            <div class="flex gap-3 items-start">
+              <div class="w-8 h-8 bg-forest-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-charcoal">General Questions</p>
+                <p class="text-xs text-stone-500 mt-0.5">Curious about the fund or how it works?</p>
+              </div>
+            </div>
+
+            <div class="flex gap-3 items-start">
+              <div class="w-8 h-8 bg-forest-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-charcoal">Partnerships</p>
+                <p class="text-xs text-stone-500 mt-0.5">Interested in collaborating or contributing?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-forest-50 border border-forest-100 rounded-xl p-4">
+            <p class="text-xs text-stone-600 leading-relaxed">
+              <strong class="text-charcoal">Please note:</strong> The fund is currently
+              in a pilot phase through a partnership with DIY Girls. We are not accepting
+              open grant applications at this time. I'm happy to answer questions or
+              connect about future opportunities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="md:col-span-3">
+          <ContactForm />
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>

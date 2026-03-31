@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cream: #faf8f2;
+  --color-charcoal: #2d2d2d;
+
+  /* Forest green — primary */
+  --color-forest-50: #f0f5f0;
+  --color-forest-100: #d9ebd9;
+  --color-forest-200: #b2d4b2;
+  --color-forest-400: #6a9e6a;
+  --color-forest-500: #4f8250;
+  --color-forest-600: #3a6b3a;
+  --color-forest-700: #2c5430;
+  --color-forest-800: #1e3d22;
+
+  /* Cherry red — accent */
+  --color-cherry-50: #fdf0f0;
+  --color-cherry-100: #fadcdd;
+  --color-cherry-400: #e05560;
+  --color-cherry-500: #d13040;
+  --color-cherry-600: #c1292e;
+  --color-cherry-700: #a01e25;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-script: "Dancing Script", cursive;
+
+  /* Fountain pen ink — deep blue-black */
+  --color-ink: #1e2140;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  /* Subtle paper grain */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+}
